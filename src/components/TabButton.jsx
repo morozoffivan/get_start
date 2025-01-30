@@ -1,8 +1,8 @@
-function TabButton({ children, onSelect }) {
+function TabButton({ children, onSelect, isSelect }) {
 
   return (
     <li>
-      <button onClick={onSelect}>{children}</button>
+      <button className={isSelect ? 'active': ''} onClick={onSelect}>{children}</button>
     </li>
   );
 }
